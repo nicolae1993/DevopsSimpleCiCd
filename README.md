@@ -29,3 +29,19 @@ Mar 15 07:24:19 ip-172-31-40-116 jenkins[3955]: 2026-03-15 07:24:19.649+0000 [id
 Setup the webhook to Jenkins URL 
 
 ![image_alt](https://github.com/nicolae1993/DevopsSimpleCiCd/blob/c207c63572cfc5074d2c44f5677090fc2d9ddbdf/images/Capture.PNG)
+
+
+```bash
+/var/lib/jenkins/workspace/ci/getting-started-app-main$ ll
+total 152
+drwxr-xr-x 4 jenkins jenkins   4096 Mar 15 09:48 ./
+drwxr-xr-x 5 jenkins jenkins   4096 Mar 15 09:48 ../
+-rw-r--r-- 1 jenkins jenkins     24 Mar 15 07:48 .dockerignore
+-rw-r--r-- 1 jenkins jenkins    162 Mar 15 09:48 Dockerfile
+-rw-r--r-- 1 jenkins jenkins    269 Mar 15 07:48 README.md
+-rw-r--r-- 1 jenkins jenkins 118912 Mar 15 07:48 package-lock.json
+-rw-r--r-- 1 jenkins jenkins    541 Mar 15 07:48 package.json
+drwxr-xr-x 4 jenkins jenkins   4096 Mar 15 07:48 spec/
+drwxr-xr-x 5 jenkins jenkins   4096 Mar 15 07:48 src/
+
+```
