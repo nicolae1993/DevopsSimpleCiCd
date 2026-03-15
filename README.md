@@ -28,4 +28,4 @@ Mar 15 07:24:19 ip-172-31-40-116 jenkins[3955]: 2026-03-15 07:24:19.649+0000 [id
 
 Setup the webhook to Jenkins URL 
 
-https://github.com/nicolae1993/DevopsSimpleCiCd/blob/c207c63572cfc5074d2c44f5677090fc2d9ddbdf/images/Capture.PNG
+![image_alt](https://github.com/nicolae1993/DevopsSimpleCiCd/blob/c207c63572cfc5074d2c44f5677090fc2d9ddbdf/images/Capture.PNG)
