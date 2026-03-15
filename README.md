@@ -1,3 +1,47 @@
+# 🚀 CI/CD Pipeline with Jenkins and Docker
+
+This project demonstrates a simple **CI/CD pipeline** using **Jenkins** and **Docker** to build and deploy an open-source application.
+
+## 📌 Project Overview
+
+The repository contains a **Dockerfile** used to build a Docker image for an open-source application.  
+The entire build and deployment process is automated using a **Jenkins pipeline**.
+
+## ⚙️ CI/CD Workflow
+
+The pipeline performs the following steps:
+
+1. **Source Code Checkout**
+   - Jenkins connects to the GitHub repository and downloads the latest version of the code.
+
+2. **Build Docker Image**
+   - Jenkins builds a Docker image using the `Dockerfile` included in the repository.
+
+3. **Tag Docker Image**
+   - The image is tagged with the Jenkins **BUILD_ID** and also with the `latest` tag.
+
+4. **Push Image to Docker Hub**
+   - The built image is pushed to **Docker Hub**, making it available for deployment anywhere.
+
+5. **Run Docker Container**
+   - Jenkins runs a container using the latest version of the Docker image.
+
+## 🐳 Technologies Used
+
+- **Jenkins** – CI/CD automation
+- **Docker** – Containerization
+- **Docker Hub** – Image registry
+- **GitHub** – Source code hosting
+
+## ▶️ Example Docker Run Command
+
+```bash
+docker run -itd --name ci -p 3000:3000 username/docker_image:latest
+
+
+
+
+
 # DevopsSimpleCiCd
 
 ```bash
