@@ -22,3 +22,12 @@ First step was to set the credential for Jenkins to be able to connect to Docker
 ![image_alt](https://github.com/nicolae1993/DevopsSimpleCiCd/blob/0ca21a6eb1e40da5610b22d3e018faecab6566be/images/docker_images.PNG)
 
 ![image_alt](https://github.com/nicolae1993/DevopsSimpleCiCd/blob/a674cb41857f1108ab2292f06fb2e2771bc1bdbf/images/dockerhubVersion.PNG)
+
+
+```
++ docker image push nicolaestan93/docker_ci:latest
+The push refers to repository [docker.io/nicolaestan93/docker_ci]
+d8573c1c310e: Waiting
+0653b96c7e89: Waiting
+latest: digest: sha256:d75f8dd24e1649e1fa8f67c2603b8549ac94505de1e0990a3e76fffc052fec6b size: 856
+```
