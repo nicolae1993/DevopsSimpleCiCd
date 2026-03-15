@@ -46,26 +46,17 @@ docker run -itd --name docker_ci -p 3000:3000 nicolaestan93/docker_ci:latest
 
 
 ```bash
-jenkins.service - Jenkins Continuous Integration Server
+ systemctl status jenkins
+● jenkins.service - Jenkins Continuous Integration Server
      Loaded: loaded (/usr/lib/systemd/system/jenkins.service; enabled; preset: enabled)
-     Active: active (running) since Sun 2026-03-15 07:24:19 UTC; 2min 4s ago
-   Main PID: 3955 (java)
-      Tasks: 37 (limit: 1006)
-     Memory: 308.9M (peak: 330.2M)
-        CPU: 20.976s
+     Active: active (running) since Sun 2026-03-15 09:32:22 UTC; 2h 40min ago
+   Main PID: 534 (java)
+      Tasks: 48 (limit: 4522)
+     Memory: 826.2M (peak: 847.9M)
+        CPU: 2min 35.190s
      CGroup: /system.slice/jenkins.service
-             └─3955 /usr/bin/java -Djava.awt.headless=true -jar /usr/share/java/jenkins.war --webroot=/var/cache/jenkins/war --httpPort=8080
+             └─534 /usr/bin/java -Djava.awt.headless=true -jar /usr/share/java/jenkins.war --webroot=/var/cache/jenkins/war --httpPort=8080
 
-Mar 15 07:24:13 ip-172-31-40-116 jenkins[3955]: [LF]> This may also be found at: /var/lib/jenkins/secrets/initialAdminPassword
-Mar 15 07:24:13 ip-172-31-40-116 jenkins[3955]: [LF]>
-Mar 15 07:24:13 ip-172-31-40-116 jenkins[3955]: [LF]> *************************************************************
-Mar 15 07:24:13 ip-172-31-40-116 jenkins[3955]: [LF]> *************************************************************
-Mar 15 07:24:13 ip-172-31-40-116 jenkins[3955]: [LF]> *************************************************************
-Mar 15 07:24:19 ip-172-31-40-116 jenkins[3955]: 2026-03-15 07:24:19.022+0000 [id=32]        INFO        jenkins.InitReactorRunner$1#onAttained: C>
-Mar 15 07:24:19 ip-172-31-40-116 jenkins[3955]: 2026-03-15 07:24:19.042+0000 [id=24]        INFO        hudson.lifecycle.Lifecycle#onReady: Jenki>
-Mar 15 07:24:19 ip-172-31-40-116 systemd[1]: Started jenkins.service - Jenkins Continuous Integration Server.
-Mar 15 07:24:19 ip-172-31-40-116 jenkins[3955]: 2026-03-15 07:24:19.648+0000 [id=50]        INFO        h.m.DownloadService$Downloadable#load: Ob>
-Mar 15 07:24:19 ip-172-31-40-116 jenkins[3955]: 2026-03-15 07:24:19.649+0000 [id=50]        INFO        hudson.util.Retrier#start: Performed the
 
 
 
@@ -83,11 +74,6 @@ TriggeredBy: ● docker.socket
              ├─ 765 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
              ├─4442 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 3000 -container-ip 172.17.0.2 -container-port 3000 -use-listen-fd
              └─4450 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 3000 -container-ip 172.17.0.2 -container-port 3000 -use-listen-fd
-
-Mar 15 11:07:45 ip-172-31-40-116 dockerd[765]: time="2026-03-15T11:07:45.300566972Z" level=info msg="image created" imageID="sha256:ea6909421b200>
-Mar 15 11:31:39 ip-172-31-40-116 dockerd[765]: time="2026-03-15T11:31:39.011380595Z" level=info msg="detected 127.0.0.53 nameserver, assuming sys>
-Mar 15 11:31:39 ip-172-31-40-116 dockerd[765]: time="2026-03-15T11:31:39.780893897Z" level=warning msg="forcibly turning on oci-mediatype mode fo>
-Mar 15 11:31:40 ip-172-31-40-116 dockerd[765]: time="2026-03-15T11:31:40.163505667Z" level=info msg="image created" imageID="sha256:578eaa8f82b32
 ```
 
 
