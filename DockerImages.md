@@ -1,6 +1,8 @@
 
 In this pipeline I created the images 
 
+![image_alt](https://github.com/nicolae1993/DevopsSimpleCiCd/blob/e06566e1e3b70bc0a629333fe6ca708af1ba6913/images/jenkins_pipeline.PNG)
+
 ```groovy
 
         stage("image build"){
