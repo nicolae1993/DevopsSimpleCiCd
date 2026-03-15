@@ -32,13 +32,14 @@ Setup the webhook to Jenkins URL
 
 After running this groovy pipeline the project was brought to Jenkins server
 
+```groovy
     stages{
         stage("Code checkout"){
             steps{
                 git branch: 'main', url: 'https://github.com/nicolae1993/DevopsSimpleCiCd.git'
             }
         }
-
+```
         
 
 ```bash
