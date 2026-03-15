@@ -30,6 +30,16 @@ Setup the webhook to Jenkins URL
 
 ![image_alt](https://github.com/nicolae1993/DevopsSimpleCiCd/blob/c207c63572cfc5074d2c44f5677090fc2d9ddbdf/images/Capture.PNG)
 
+After running this groovy pipeline the project was brought to Jenkins server
+
+    stages{
+        stage("Code checkout"){
+            steps{
+                git branch: 'main', url: 'https://github.com/nicolae1993/DevopsSimpleCiCd.git'
+            }
+        }
+
+        
 
 ```bash
 /var/lib/jenkins/workspace/ci/getting-started-app-main$ ll
