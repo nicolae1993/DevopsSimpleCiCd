@@ -41,6 +41,7 @@ After running this groovy pipeline the project was brought to Jenkins server
         }
 ```
         
+```  Below the Jenkins server where you can see the content of the project from Github```
 
 ```bash
 /var/lib/jenkins/workspace/ci/getting-started-app-main$ ll
