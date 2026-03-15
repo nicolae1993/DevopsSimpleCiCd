@@ -36,7 +36,7 @@ The pipeline performs the following steps:
 ## ▶️ Example Docker Run Command
 
 ```bash
-docker run -itd --name ci -p 3000:3000 username/docker_image:latest
+docker run -itd --name docker_ci -p 3000:3000 nicolaestan93/docker_ci:latest
 
 
 
