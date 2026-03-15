@@ -37,13 +37,12 @@ The pipeline performs the following steps:
 ## ▶️ Example Docker Run Command
 
 ```bash
-docker run -itd --name docker_ci -p 3000:3000 nicolaestan93/docker_ci:latest
+docker run -itd --name docker_ci -p 3000:3000 nicolaestan93/docker_ci:latest```
 
 
 
 
 
-# DevopsSimpleCiCd
 
 ```bash
 jenkins.service - Jenkins Continuous Integration Server
