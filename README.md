@@ -81,7 +81,7 @@ Setup the webhook to Jenkins URL
 
 ![image_alt](https://github.com/nicolae1993/DevopsSimpleCiCd/blob/c207c63572cfc5074d2c44f5677090fc2d9ddbdf/images/Capture.PNG)
 
-After running this groovy pipeline the project was brought to Jenkins server
+After running this groovy pipeline the Github project was brought to Jenkins server
 
 ```groovy
     stages{
