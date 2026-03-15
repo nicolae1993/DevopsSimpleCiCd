@@ -3,7 +3,7 @@ This Docker image was built automatically using a Jenkins pipeline.
 
 The pipeline handles building the image from the Dockerfile and tagging it with both a unique build version and latest for easy deployment. 
 
-![image_alt](https://github.com/nicolae1993/DevopsSimpleCiCd/blob/e06566e1e3b70bc0a629333fe6ca708af1ba6913/images/jenkins_pipeline.PNG)
+
 
 ```groovy
 
@@ -14,6 +14,9 @@ The pipeline handles building the image from the Dockerfile and tagging it with 
             }
 
 ```
+
+![image_alt](https://github.com/nicolae1993/DevopsSimpleCiCd/blob/e06566e1e3b70bc0a629333fe6ca708af1ba6913/images/jenkins_pipeline.PNG)
+
 
 ```After I run the above pipeline in Jenkins the below image was created with ID 3e8f09d15902. 
 Latest has the same ID and it is just a tag.
