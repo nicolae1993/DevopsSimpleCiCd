@@ -1,6 +1,7 @@
 # 🚀 CI/CD Pipeline with Jenkins and Docker
 
-This project demonstrates a simple **CI/CD pipeline** using **Jenkins** and **Docker** to build and deploy an open-source application: https://github.com/docker/getting-started
+This project demonstrates a simple **CI/CD pipeline** using **Jenkins** and **Docker** to build and deploy an open-source application: 
+https://github.com/docker/getting-started
 
 ## 📌 Project Overview
 
