@@ -13,7 +13,8 @@ In this pipeline I created the images
 
 ```After I run the above pipeline in Jenkins the below image was created with ID 3e8f09d15902. 
 Latest has the same ID and it is just a tag.
-A Docker tag is essentially a label or alias that points to a specific Docker image. It’s part of the image name and helps you identify, version, and manage images easily.```
+A Docker tag is essentially a label or alias that points to a specific Docker image.
+It’s part of the image name and helps you identify, version, and manage images easily.```
 
 ```bash
 docker images
