@@ -23,6 +23,26 @@ Mar 15 07:24:19 ip-172-31-40-116 jenkins[3955]: 2026-03-15 07:24:19.648+0000 [id
 Mar 15 07:24:19 ip-172-31-40-116 jenkins[3955]: 2026-03-15 07:24:19.649+0000 [id=50]        INFO        hudson.util.Retrier#start: Performed the
 
 
+
+systemctl status docker
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2026-03-15 09:32:08 UTC; 2h 21min ago
+TriggeredBy: ● docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 765 (dockerd)
+      Tasks: 24
+     Memory: 144.4M (peak: 172.5M)
+        CPU: 9.668s
+     CGroup: /system.slice/docker.service
+             ├─ 765 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+             ├─4442 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 3000 -container-ip 172.17.0.2 -container-port 3000 -use-listen-fd
+             └─4450 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 3000 -container-ip 172.17.0.2 -container-port 3000 -use-listen-fd
+
+Mar 15 11:07:45 ip-172-31-40-116 dockerd[765]: time="2026-03-15T11:07:45.300566972Z" level=info msg="image created" imageID="sha256:ea6909421b200>
+Mar 15 11:31:39 ip-172-31-40-116 dockerd[765]: time="2026-03-15T11:31:39.011380595Z" level=info msg="detected 127.0.0.53 nameserver, assuming sys>
+Mar 15 11:31:39 ip-172-31-40-116 dockerd[765]: time="2026-03-15T11:31:39.780893897Z" level=warning msg="forcibly turning on oci-mediatype mode fo>
+Mar 15 11:31:40 ip-172-31-40-116 dockerd[765]: time="2026-03-15T11:31:40.163505667Z" level=info msg="image created" imageID="sha256:578eaa8f82b32
 ```
 
 
